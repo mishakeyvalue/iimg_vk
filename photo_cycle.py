@@ -1,4 +1,4 @@
-_album_id = "241957124"
+_album_id = "243762445"
 vk = None
 import requests
 import json
@@ -11,7 +11,7 @@ def start(_vk):
     alb = vk.photos.get(album_id = _album_id)
     for ph in alb['items']:
         _download_photo_to_buffer(ph["photo_604"])
-        time.sleep(60)
+        time.sleep(300)
 
 import urllib.request
 buff_name = "temp.jpg"
